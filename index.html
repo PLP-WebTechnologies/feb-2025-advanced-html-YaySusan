@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Element and Forms</title>
+</head>
+<body>
+    <!-- Ordered list with roman numerals -->
+    <section>
+        <h2>Ordered List with Roman Numerals</h2>
+        <ol type="I">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+    </section>
+
+    <!-- External image from pexels.com -->
+    <section>
+        <h2>External Image</h2>
+        <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg" 
+             alt="Sample image from Pexels" 
+             width="400">
+    </section>
+
+    <!-- Contacts table with 5 contacts-->
+    <section>
+        <h2>Contacts Table</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Nolan</td>
+                    <td>123 Pretoria Street</td>
+                    <td>000 000 0000</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Lucy Chen</td>
+                    <td>45 Hadeda Crescent</td>
+                    <td>000 000 0001</td>
+                    <td>lucy@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jackson West</td>
+                    <td>894 Pine Road</td>
+                    <td>000 000 0002</td>
+                    <td>jackson@example.com</td>
+                </tr>
+                <tr>
+                    <td>Tim Bradford</td>
+                    <td>321 Zambezi Drive</td>
+                    <td>000 000 0003</td>
+                    <td>tim@example.com</td>
+                </tr>
+                <tr>
+                    <td>Angela Lopez</td>
+                    <td>5 Locust Street</td>
+                    <td>000 000 0004</td>
+                    <td>angela@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form>
+            <!-- Text inputs for basic details-->
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" 
+                       placeholder="Enter your full name" required>
+            </div>
+            
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" 
+                       placeholder="Enter your email" required>
+            </div>
+            
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" 
+                       placeholder="Create a password" 
+                       minlength="8" required>
+            </div>
+            
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            
+            <!-- Dropdown for country -->
+            <div>
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="ke">Kenya</option>
+                    <option value="za">South Africa</option>
+                    <option value="ug">Uganda</option>
+                </select>
+            </div>
+            
+            <!-- Radio buttons for gender -->
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+            
+            <!-- Checkboxes for interests -->
+            <div>
+                <label>Interests:</label>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label>
+                
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label>
+                
+                <input type="checkbox" id="reading" name="interests" value="reading">
+                <label for="reading">Reading</label>
+            </div>
+            
+            <!-- Submit button -->
+            <div>
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
